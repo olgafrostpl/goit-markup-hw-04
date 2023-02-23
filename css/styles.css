@@ -182,20 +182,14 @@ img {
 .feature-item:last-child {
   margin-right: 0;
 }
-.feature-item::before {
-  content: '';
+.icon {
   display: block;
-  background-image: url('../images/icons.svg#antenna');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  background: var(--light-color);
-  border-radius: 4px;
   width: 264px;
   height: 112px;
-}
-.icon-antenna::before {
-  background-image: url('../images/icons.svg#antenna');
+  padding: 24px 100px;
+  background: var(--light-color);
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
 /* PRODUCTS */
@@ -345,6 +339,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-decoration: none;
+  border-color: transparent;
 }
 
 .button:hover,
@@ -437,6 +432,7 @@ img {
   justify-content: center;
   gap: 24px;
 }
+
 .customers-link {
   display: block;
   justify-content: center;
@@ -445,13 +441,21 @@ img {
   height: 88px;
   padding: 16px 32px;
   border: 1px solid var(--subtle-text-color);
-
   border-radius: 4px;
+}
+.customers-link:hover,
+.customers-link:focus {
+  border: 1px solid var(--pressed-color);
 }
 
 .customers-icon {
   fill: var(--subtle-text-color);
 }
+.customers-icon:hover,
+.customers-icon:focus {
+  fill: var(--pressed-color);
+}
+
 /* FOOTER-SOCIAL */
 
 .footer-list {
